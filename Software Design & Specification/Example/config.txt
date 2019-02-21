@@ -1,4 +1,0 @@
-InputWord=False
-AdvancedDictionary=True
-Minimumletter=03
-Maximumletter=99
