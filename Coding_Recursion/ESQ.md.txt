@@ -1,0 +1,47 @@
+# C25 Questions
+S3 Opt3 Stefan Yuzhao Heng
+
+## 1 
+a. Recursion is calling the function itself in the function. 
+In iteration, the function isn't called within the function. 
+b. Stack frames required can take huge memory spaces. 
+
+## 2
+a. The function is called within the function itself. 
+b. 
+| Call number | Prcodure call | Exponent = 0 | Return |
+| :---: | :---: | :---: | :---: |
+| 1 | Power(2,4) | False | 2* |
+| 2 | Power(2,3) | False | 2* |
+| 3 | X(2,2) | False | 2* |
+| 4 | X(2,1) | False | 2* |
+| 5 | X(2,0) | True | 1 |
+c. Stack frames include local variable, parameters. 
+A recursive call would add a frame. 
+When the base case is reached, functions can be returned one by one. 
+e. 
+FUNCTION Power(Base:INTEGER, Exponent:INTEGER) RETURN INTEGER
+    Result = 1
+    FOR i(Exponent)
+        Result ¡û Result * Base
+    ENDFOR 
+    RETURN Result 
+f. 
+i. For a relatively small exponent, a non-recursive function would be faster. 
+ii. For a relatively big exponent, a recursive function would be faster. 
+
+## 3
+a. 
+i. 02 
+ii. 05 
+b. 
+| Call number | Prcodure call | n = 0 or n = 1 | Result |
+| :---: | :---: | :---: | :---: |
+| 1 | Fibonacci(4) | False | Fibonacci(3) + Fibonacci(2) |
+| 2 | Fibonacci(3) | False | Fibonacci(2) + Fibonaaci(1) |
+| 2 | Fibonacci(2) | False | Fibonacci(1) + Fibonacci(0) |
+| 3 | Fibonacci(2) | False | Fibonacci(1) + Fibonaaci(0) | 
+| 3 | Fibonacci(1) | True | 1 | 
+| 3 | Fibonaaci(0) | True | 1 | 
+| 4 | Fibonacci(1) | True | 1 | 
+| 4 | Fibonaaci(0) | True | 1 | 
